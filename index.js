@@ -5,6 +5,7 @@ import {
   listContacts,
   removeContact,
 } from "./contacts.js";
+
 program
   .option("-a, --action <type>", "choose action")
   .option("-i, --id <type>", "user id")

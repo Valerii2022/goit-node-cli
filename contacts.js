@@ -5,7 +5,7 @@ import path from "path";
 const contactsPath = path.resolve("db", "contacts.json");
 
 function updateContacts(contacts) {
-  return fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
+  fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
 }
 
 export async function listContacts() {
